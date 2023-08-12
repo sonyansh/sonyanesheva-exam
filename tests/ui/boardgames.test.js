@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, toBeTruthy() } = require('@playwright/test');
 
 test('Check boardgames page', async ({ page }) => {
     await page.goto('http://localhost:8080/collection');
